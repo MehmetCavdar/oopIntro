@@ -7,6 +7,8 @@ public class Product {
 	}
 	
 	public Product(int id, String name, double unitPrice, String detail) {
+		
+		this ();// bunu yazarsak yukaridaki metotda calisir
 		this.id=id;
 		this.name=name;
 		this.unitPrice=unitPrice;
@@ -14,7 +16,7 @@ public class Product {
 	}
 	
 	
-	int id;  // her nesneye özgü bir numara (TC Kimlik numarasi gibi) atariz. Standart uygulama
+	int id;  // her nesneye özgü bir numara (TC Kimlik numarasi gibi) atariz. Standart uygulamadir
 	String name;
 	double unitPrice;
 	String detail;

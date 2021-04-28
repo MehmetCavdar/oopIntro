@@ -24,6 +24,7 @@ public class Main {
 		}
 		
 		System.out.println("Ürün sayisi " + products.length);
+		System.out.println("-------------------" );
 		
 		Category category1 = new Category(); // örnek, referans, instance olusturma
 		category1.id=1;
@@ -42,5 +43,11 @@ public class Main {
 		}
 			
 		System.out.println("Kategori sayisi" + categories.length);
+		System.out.println("-------------------" );
+		
+		ProductManager productManager = new ProductManager() ;  // IS classini newledik
+		productManager.addToCart(product1);  //tanimlanan Class icinden istenen metodu cagirma
+		productManager.addToCart(product2);  	
+		productManager.addToCart(product3);  	
 	}
 }
